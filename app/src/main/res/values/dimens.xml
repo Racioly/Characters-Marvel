@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_32"              > 32dp    </dimen>
+    <dimen name="dimen_16"              > 16dp    </dimen>
+    <dimen name="dimen_8"               > 8dp     </dimen>
+    <dimen name="dimen_0"               > 0dp     </dimen>
+    <dimen name="image_detail"          > 180dp   </dimen>
+    <dimen name="image_recycler"        > 80dp   </dimen>
+    <dimen name="image_toolbar_height"  > 80dp   </dimen>
+    <dimen name="image_toolbar_width"   > 150dp   </dimen>
+    <dimen name="text_title"            > 24sp    </dimen>
+    <dimen name="text_default"          > 16sp    </dimen>
+</resources>

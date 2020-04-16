@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Characters</string>
+    <string name="text_processing">Processing...</string>
+    <string name="text_ok">Ok</string>
+    <string name="text_characters">Charaters</string>
+    <string name="text_id">Id:</string>
+    <string name="text_modified_default">0000-00-00X00:00:00-0000</string>
+    <string name="text_no_description">No description</string>
+    <string name="text_id_default">0000000</string>
+    <string name="text_modified">Modified:</string>
+    <string name="text_description">Description:</string>
+    <string name="text_character_name">Character name</string>
+    <string name="text_more_info">More info</string>
+</resources>
