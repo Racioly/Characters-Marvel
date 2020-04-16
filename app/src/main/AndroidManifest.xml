@@ -14,16 +14,20 @@
         android:name=".App"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.splash.SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.mian.MainActivity"/>
-        <activity android:name=".BaseActivity"/>
-        <activity android:name=".ui.details.DetailsActivity"/>
+        <activity android:name=".ui.mian.MainActivity"
+            android:screenOrientation="locked"/>
+        <activity android:name=".BaseActivity"
+            android:screenOrientation="locked"/>
+        <activity android:name=".ui.details.DetailsActivity"
+            android:screenOrientation="locked"/>
 
     </application>
 
