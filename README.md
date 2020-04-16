@@ -2,10 +2,10 @@
 
 App Characters-Marvel Android desenvolivido em Kotlin consumindo API Marvel com as seguintes dependencies:
 
-##API Marvel
+## API Marvel
 - [API Marvel](https://developer.marvel.com/)
 
-##Dependencies
+## Dependencies
 - [Retrofit2](https://square.github.io/retrofit/)
 - [Converter Jackson](https://github.com/square/retrofit/tree/master/retrofit-converters/jackson)
 - [Fresco](https://frescolib.org/)
