@@ -8,6 +8,11 @@ import retrofit2.http.Query
 
 interface CharacterService {
 
-    @GET("v1/public/characters?limit=100&ts=1&apikey=bf0a75e351a5cfed0d01dc5ec3f9cf3a&hash=f68ee1ad0306861ac1114a797d4f98a3")
-    fun getCharacter(): Call<ResponseAPI>
+    @GET("v1/public/characters")
+    fun getCharacter(
+        @Query("limit"  ) limit : String,
+        @Query("ts"     ) ts    : String,
+        @Query("apikey" ) apikey: String,
+        @Query("hash"   ) hash  : String
+    ): Call<ResponseAPI>
 }

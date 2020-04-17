@@ -24,7 +24,7 @@ class MainActivity : BaseActivity(), Contract.CharacterView {
     }
 
     override fun showError(error: String?) {
-        showAlert("Ops...", error!!)
+        showAlert("Ops...", "Connection error: could not connect to the server.")
         kProgressHUD?.dismiss()
     }
 

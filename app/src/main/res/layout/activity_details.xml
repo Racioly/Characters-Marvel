@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:fillViewport="true"
     tools:context=".ui.details.DetailsActivity">
 
@@ -12,50 +12,50 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <include
-        android:id="@+id/include2"
-        layout="@layout/toolbar_default"
-        android:layout_width="@dimen/dimen_0"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txvName"
-        style="@style/TitleStyle"
-        android:layout_width="@dimen/dimen_0"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_32"
-        android:layout_marginLeft="@dimen/dimen_32"
-        android:layout_marginTop="@dimen/dimen_16"
-        android:layout_marginEnd="@dimen/dimen_32"
-        android:layout_marginRight="@dimen/dimen_32"
-        android:gravity="center"
-        android:text="@string/text_character_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include2" />
-
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/imvThumb"
-        android:layout_width="@dimen/image_detail"
-        android:layout_height="@dimen/image_detail"
-        android:layout_marginStart="@dimen/dimen_32"
-        android:layout_marginLeft="@dimen/dimen_32"
-        android:layout_marginTop="@dimen/dimen_16"
-        android:layout_marginEnd="@dimen/dimen_32"
-        android:layout_marginRight="@dimen/dimen_32"
-        app:actualImageScaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvName"
-        app:placeholderImage="@mipmap/ic_launcher" />
+        <include
+            android:id="@+id/include2"
+            layout="@layout/toolbar_default"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            style="@style/TextStyleBold"
+            android:id="@+id/txvName"
+            style="@style/TitleStyle"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginLeft="@dimen/dimen_32"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_32"
+            android:layout_marginRight="@dimen/dimen_32"
+            android:gravity="center"
+            android:text="@string/text_character_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imvThumb"
+            android:layout_width="@dimen/image_detail"
+            android:layout_height="@dimen/image_detail"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginLeft="@dimen/dimen_32"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_32"
+            android:layout_marginRight="@dimen/dimen_32"
+            app:actualImageScaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvName"
+            app:placeholderImage="@mipmap/ic_launcher" />
+
+        <TextView
             android:id="@+id/textView2"
+            style="@style/TextStyleBold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_32"
@@ -65,33 +65,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imvThumb" />
 
-    <TextView
-        android:id="@+id/textView3"
-        style="@style/TextStyleBold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_32"
-        android:layout_marginLeft="@dimen/dimen_32"
-        android:layout_marginTop="@dimen/dimen_16"
-        android:text="@string/text_description"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView4"
-        style="@style/TextStyleBold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_32"
-        android:layout_marginLeft="@dimen/dimen_32"
-        android:layout_marginTop="@dimen/dimen_16"
-        android:text="@string/text_modified"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvDescription" />
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginLeft="@dimen/dimen_32"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="@string/text_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
-            style="@style/TextStyle"
+            android:id="@+id/textView4"
+            style="@style/TextStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginLeft="@dimen/dimen_32"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="@string/text_modified"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvDescription" />
+
+        <TextView
             android:id="@+id/txvId"
+            style="@style/TextStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_8"
@@ -106,8 +106,8 @@
             app:layout_constraintTop_toBottomOf="@+id/imvThumb" />
 
         <TextView
-            style="@style/TextStyle"
             android:id="@+id/txvDescription"
+            style="@style/TextStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_8"

@@ -6,8 +6,6 @@
         <item name="colorPrimary">@color/colorRed</item>
         <item name="colorPrimaryDark">@color/colorBlack</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:background">@color/colorBlack</item>
-        <item name="android:textColor">@color/colorText</item>
     </style>
 
     <!-- Spalash theme. -->
@@ -25,6 +23,7 @@
         <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
         <item name="android:gravity">center</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorText</item>
     </style>
 
     <!-- Title Recycler style -->
@@ -33,6 +32,7 @@
         <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textStart</item>
         <item name="android:gravity">start</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorText</item>
     </style>
 
 
@@ -42,6 +42,7 @@
         <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textStart</item>
         <item name="android:gravity">start</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorText</item>
     </style>
 
     <!-- Text default -->
@@ -49,6 +50,7 @@
         <item name="android:textSize">@dimen/text_default</item>
         <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textStart</item>
         <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorText</item>
     </style>
 
 </resources>

@@ -17,9 +17,9 @@ import com.facebook.drawee.view.SimpleDraweeView
 class CharacterAdapter(private val context: Context, private val characters: List<Character>): RecyclerView.Adapter<CharacterAdapter.ViewHolder>() {
 
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        var thumbnail   = view.findViewById< SimpleDraweeView > (R.id.imvThumbRecycler )
-        var name        = view.findViewById< TextView >         (R.id.txvNameRecycler  )
-        var card        = view.findViewById< CardView >         (R.id.cdvRecycler      )
+        var thumbnail   : SimpleDraweeView  = view.findViewById (R.id.imvThumbRecycler )
+        var name        : TextView          = view.findViewById (R.id.txvNameRecycler  )
+        var card        : CardView          = view.findViewById (R.id.cdvRecycler      )
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -33,7 +33,7 @@ class CharacterAdapter(private val context: Context, private val characters: Lis
         holder.thumbnail.setImageURI(Uri.parse(characters[position].thumbnail.toString()),context)
         holder.name.text = characters[position].name
         holder.card.setOnClickListener {
-            var character: Character = characters[position]
+            val character: Character = characters[position]
             context.startActivity(
                 Intent(context, DetailsActivity::class.java).apply {
                     putExtra("character", character)
