@@ -1,5 +1,6 @@
 package br.com.rafaelacioly.personagensmarvel
 
+import android.content.DialogInterface
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -22,12 +23,12 @@ open class BaseActivity : AppCompatActivity(){
     }
 
     /**Função para menssagens via Alert com um único botão*/
-    fun showAlert(title: String, message: String){
+    fun showAlert(title: String, message: String, onClick: DialogInterface.OnClickListener){
         AlertDialog.Builder(this@BaseActivity)
             .setCancelable(false)
             .setTitle(title)
             .setMessage(message)
-            .setPositiveButton(getString(R.string.text_ok), null)
+            .setPositiveButton(getString(R.string.text_ok), onClick)
             .create()
             .show()
     }

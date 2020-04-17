@@ -1,5 +1,6 @@
 package br.com.rafaelacioly.personagensmarvel.ui.mian
 
+import android.content.DialogInterface
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.rafaelacioly.personagensmarvel.BaseActivity
@@ -24,7 +25,16 @@ class MainActivity : BaseActivity(), Contract.CharacterView {
     }
 
     override fun showError(error: String?) {
-        showAlert("Ops...", "Connection error: could not connect to the server.")
+        showAlert(
+            "Ops...", 
+            "Connection error: could not connect to the server.",
+            DialogInterface.OnClickListener { _ , _ ->
+                overridePendingTransition(0, 0)
+                startActivity(intent)
+                overridePendingTransition(0, 0)
+                finishAffinity()
+            }
+        )
         kProgressHUD?.dismiss()
     }
 
