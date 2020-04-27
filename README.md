@@ -16,7 +16,7 @@ App Characters-Marvel Android desenvolivido em Kotlin consumindo API Marvel com 
 
 1. [Android Studio](https://developer.android.com/studio) = 3.6.2
 2. [Gradle](https://gradle.org/) = 3.6.2
-3. [Kolin](https://kotlinlang.org/) = 1.3.71
+3. [Kotlin](https://kotlinlang.org/) = 1.3.71
 
 
 ## Executando
