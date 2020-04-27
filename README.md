@@ -1,6 +1,6 @@
 # Characters-Marvel
 
-App Characters-Marvel Android desenvolivido em Kotlin consumindo API Marvel com as seguintes dependencies:
+App Characters-Marvel Android desenvolvido em Kotlin consumindo API Marvel com as seguintes dependencies:
 
 ## API Marvel
 - [API Marvel](https://developer.marvel.com/)
